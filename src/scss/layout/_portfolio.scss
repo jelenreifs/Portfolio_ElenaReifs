@@ -1,0 +1,275 @@
+.single-portfolio {
+  margin-bottom: 1.375rem;
+  .thumb {
+    height: 200px;
+
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .image:hover {
+      filter: opacity(0.3);
+    }
+  }
+  .modal-header {
+    border: none;
+
+    .modal-title {
+      color: #333;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .modal-body {
+    h6 {
+      color: #333;
+      text-align: center;
+    }
+  }
+
+  .modal-footer {
+    background-color: #f4f4f4;
+    border: none;
+    display: flex;
+    justify-content: center;
+
+    a {
+      border-radius: 50%;
+      border: 1px solid #6c757d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3%;
+
+      &:hover {
+        background-color: #6c757d;
+        span {
+          color: #fff;
+        }
+      }
+    }
+
+    span {
+      color: #6c757d;
+      font-size: 1.35rem;
+    }
+  }
+}
+
+/*--------- Start Portfolio Area -------------*/
+.portfolio-area {
+  .primary-btn {
+    color: $white;
+    background-color: $primary;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.portfolio-area .filters {
+  text-align: center;
+}
+
+.portfolio-area .filters ul {
+  padding: 0;
+}
+
+.portfolio-area .filters ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 18px 15px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  color: $black;
+  font-size: 12px;
+  font-weight: 500;
+  @media (max-width: 736px) {
+    padding: 6px 6px;
+  }
+}
+
+.portfolio-area .filters ul li:after {
+  content: "";
+  display: block;
+  width: calc(0% - 60px);
+  position: absolute;
+  height: 2px;
+  background: #333;
+  transition: width 350ms ease-out;
+}
+
+.filters ul li button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  transition: color .3s ease;
+  cursor: pointer;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size .3s ease;
+}
+
+.filters ul li:hover button {
+  color: $primary;
+  cursor: pointer;
+  background-size: 100% 1px;
+}
+
+.filters button:active,
+.filters button:active * {
+  outline: none !important;
+  -moz-outline-style: none !important;
+}
+
+.filters button:focus,
+.filters button:focus * {
+  outline: none !important;
+  -moz-outline-style: none !important;
+}
+
+.portfolio-area .filters ul li.active {
+  color: $primary;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+}
+
+/* NUEVO */
+
+.logos-tecnologias {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.logos-tecnologias img {
+  width: 60px;
+}
+
+h4 {
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+}
+
+.tecnologias {
+  position: relative;
+  font-size: 16px;
+  top: -30px;
+  h6 {
+    text-align: center;
+    color: #fff;
+    top: -30px;
+    margin-bottom: 1rem;
+  }
+}
+
+.logos-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*   padding: 1.5rem 3rem; */
+  margin: 0 2rem;
+  max-width: 768px;
+  /*   background-color: #fff */
+
+  img {
+    width: 60px;
+    margin: 0 0.5rem;
+  }
+}
+
+.logos-enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 4rem;
+  max-width: 768px;
+
+  a {
+    border: 1px solid #6c757d;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5%;
+    margin: 0 0.5rem;
+    &:hover {
+      background-color: #6c757d;
+      span {
+        color: #fff;
+      }
+    }
+
+    span {
+      font-size: 1.65rem;
+      color: #6c757d;
+    }
+  }
+}
+
+/* Proyecto Destacado */
+.site-section-proyect-outstanding {
+  margin-top: 70px;
+
+  .proyecto-destacado {
+    padding-right: 2rem;
+  }
+
+  .text-outstanding {
+    color: #000;
+    padding: 1.375rem 3rem;
+    p {
+      margin: 0;
+    }
+
+    .section-heading {
+      margin: 0;
+      padding: 0;
+      height: 0.75rem;
+      h4 {
+        color: #000 !important;
+        text-align: left;
+        font-weight: 700;
+      }
+    }
+  }
+  .technology {
+    list-style: none;
+    padding-left: 0 !important;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      width: 38px;
+    }
+  }
+}
+
+/* button[class~="btn-icon"] { */
+/* button.btn-icon {
+  background-color: lime;
+}
+
+.icon-github {
+  background: url('images/ico_github.svg') no-repeat 0 50%;
+  background-size: 18px;
+}
+ */

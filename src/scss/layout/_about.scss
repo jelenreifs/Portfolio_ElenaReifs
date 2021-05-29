@@ -1,0 +1,33 @@
+.site-about {
+  background-color: #fff;
+  color: #333;
+
+  .section-heading {
+    text-align: left;
+    height: 2rem;
+
+    h2 {
+      color: #000;
+      font-size: 2.5rem;
+      strong {
+        font-weight: 800;
+      }
+    }
+  }
+
+  .img-about {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+    img {
+      max-width: 300px;
+    }
+  }
+
+  .text-about {
+    text-align: justify;
+    padding: 1rem 3rem 1.85rem;
+    line-height: 1.5rem;
+  }
+}

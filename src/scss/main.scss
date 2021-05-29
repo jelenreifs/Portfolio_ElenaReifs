@@ -1,0 +1,27 @@
+//Bootstrap
+/* @import 'bootstrap/bootstrap-grid';
+@import 'bootstrap/bootstrap-reboot';
+@import 'bootstrap/bootstrap';  */
+
+//Bootstrap custom
+/* @import './bootstrap/bootstrap-grid.scss';
+@import './bootstrap/bootstrap-reboot.scss';
+@import './bootstrap/bootstrap.scss';
+@import 'custom-settings'; */
+
+@import 'custom-settings';
+
+//Layout
+ @import 'style'; 
+@import 'layout/sections';
+@import 'layout/tabs';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/intro';
+@import 'layout/about';
+@import 'layout/portfolio';
+@import 'layout/contact';
+@import 'layout/resumen';
+
+//sass --watch src/scss/main.scss:src/index.css

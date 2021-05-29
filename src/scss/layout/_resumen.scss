@@ -1,0 +1,279 @@
+.section-resumen {
+  margin-top: 70px;
+}
+
+.site-section {
+  color: #333;
+
+  .container {
+    padding: 1rem;
+  }
+  .sidebar-wrapper {
+    background: #f4f4f4;
+
+    .foto-cv {
+      img {
+        width: 100%;
+      }
+    }
+
+    .contact {
+      padding: 2rem 0;
+
+      .contact-list {
+        font-size: 14px;
+        vertical-align: middle;
+        list-style-type: none;
+        padding-left: 0.3rem;
+
+        a {
+          font-size: 1rem;
+          color: #000 !important;
+
+          &:hover {
+            text-decoration: none;
+            color: $primary !important;
+          }
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          margin: 0.5rem 0;
+
+          .icon {
+            border: 1px solid $primary;
+            border-radius: 50% 50%;
+            width: 32px;
+            height: 32px;
+            padding: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.65rem;
+
+            i {
+              font-size: 1rem;
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-wrapper {
+    background: #fff;
+    padding: 2rem;
+
+    h2 {
+      color: $primary;
+      font-size: 3rem;
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .title-section {
+      font-size: 1.85rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      vertical-align: middle;
+      list-style-type: none;
+    }
+  }
+
+  .title-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.65rem;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 1rem;
+  }
+
+  .title-formacion {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: $primary;
+    margin: 1rem 0;
+    span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 300;
+      margin: .4rem 0;
+    }
+  }
+
+  .formacion-data {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: $black;
+  }
+
+  .rectangle {
+    width: 100%;
+    background: $primary;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hobbies {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border-color: #404040;
+  }
+
+  /*right PART*/
+
+  .formation-list {
+    font-size: 18px;
+    vertical-align: middle;
+    list-style-type: none;
+  }
+
+  .filet {
+    border-bottom: 3px solid #e5cbce;
+    width: 100%;
+  }
+
+  .subtitle {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #e5cbce;
+    text-decoration-style: 3px;
+  }
+
+  .job {
+    display: flex;
+  }
+
+  .left-side {
+    display: flex;
+    width: 30%;
+    padding-top: 20px;
+  }
+
+  .details {
+    width: 100%;
+    color: $primary;
+    text-decoration: none;
+    color: #404040;
+    margin-top: 1rem;
+
+    .empresa {
+      color: $primary;
+      font-weight: 500;
+      font-size: 1.35rem;
+      margin: 0;
+    }
+
+    .cargo {
+      color: $black;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    transform: translate(-20px);
+
+  .circular-progress {
+    position: relative;
+    margin: auto;
+    &,
+    &:before,
+    &:after {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+
+    &:before {
+      line-height: 8rem;
+      padding: .5em;
+      box-sizing: border-box;
+      font-size: 1.8rem;
+    }
+
+    &:after {
+      line-height: 13rem;
+    }
+  }
+
+  @function progress ($percent) {
+    $deg: $percent/100 * 180;
+    @return #{$deg}deg;
+  }
+
+  @mixin circular-progress($percent,$skill,$color,$bgcolor) {
+    $progress: progress($percent);
+    background: linear-gradient(0deg, $color 50%, rgba($color, .2) 50%);
+    transform: rotate($progress);
+
+    &:before,
+    &:after {
+      color: $color;
+    }
+
+    &:before {
+      content: "#{$skill}";
+      background: $bgcolor content-box;
+      transform: rotate(-#{$progress});
+      text-transform: uppercase;
+    }
+
+    &:after {
+      content: "#{$percent}%";
+      background: linear-gradient(transparent 50%, $bgcolor 50%);
+      transform: scale(1.1) rotate(-#{$progress});
+    }
+  }
+  .html5 {
+    @include circular-progress(
+    70,
+    html5,
+    tomato,
+    #f4f4f4
+    );
+  }
+  .css3 {
+    @include circular-progress(
+    85,
+    css3,
+    steelblue,
+    #f4f4f4
+    );
+  }
+  .jscript {
+    @include circular-progress(
+    57,
+    js,
+    orange,
+    #f4f4f4
+    );
+  }
+
+  .graph {
+    transform: scale(0.6);
+    max-height: 80px;
+    width: 40%;
+    margin-left: 20px;
+  }
+}
