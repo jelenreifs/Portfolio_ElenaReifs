@@ -1,8 +1,8 @@
 {
+  "homepage": "https://jelenreifs.github.io/Portfolio_ElenaReifs/",
   "name": "cliente",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jelenreifs.github.io/Portfolio_ElenaReifs/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",

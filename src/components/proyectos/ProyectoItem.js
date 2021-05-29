@@ -44,7 +44,7 @@ function ProyectoItem({ id, src, category, title, description, tecnologies, url 
 						</div>
 					</div>
 					<div className="modal-footer">
-						<button type="button" className="btn btn-outline-secondary  icon-buttom-github">Código</button>
+						<button type="button" className="btn btn-outline-secondary btn-icon icon-github">Código</button>
 						<button type="button" className="btn btn-outline-secondary">Demo</button>
 					</div>
 				</div>
