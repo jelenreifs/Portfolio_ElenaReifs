@@ -1,5 +1,5 @@
-# Cooworking
-## Aplicación MERN para la rserva de puestos de trabajo en la oficina.
+# Portfolio Elena Reifs
+## Catálogo de trabajos realizados y trayectoria profesional.
 
 ### Screeshots
 ![Alt text](/screenshots/Screenshot_Portfolio_01.png?raw=true "Home")
